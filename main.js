@@ -7,13 +7,13 @@ for (var i = 0; i < customers.results.length; i++) {
   customer.className = "each_customer";
   customer.innerHTML = `
     <img src="${cust.picture.large}">
-    <div class="name">${cust.name.first} ${cust.name.last}</div>
+    <div class="name"><span>${cust.name.first} ${cust.name.last}</span></div>
     <div class="email">${cust.email}</div>
     <br>
-    <div class="address">${cust.location.street}</div>
-    <div class="csz">${cust.location.city}, ${cust.location.state} ${cust
-    .location.postcode}</div>
-    <div class="phone">${cust.phone}</div>
+    <div class="address_phone">${cust.location.street}</div>
+    <div class="address_phone">${cust.location.city}, ${cust.location
+    .state} ${cust.location.postcode}</div>
+    <div class="address_phone">${cust.phone}</div>
     <br>
     <div class="ssn">${cust.id.value}</div>
   `;

@@ -14,14 +14,41 @@ header {
 }
 
 .each_customer {
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 22%;
-  margin: 0 15px 30px 15px;
+  margin: 0 15px 50px 15px;
 }
 
 .each_customer img {
   height: 250px;
   margin-bottom: 20px;
+}
+
+.name {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.name span {
+  border-bottom: 2px solid green;
+}
+
+.email {
+  font-size: 10pt;
+  text-transform: uppercase;
+  color: #b3bec1;
+}
+
+.address_phone {
+  text-transform: capitalize;
+  color: #666;
+}
+
+.ssn {
+  color: green;
 }
